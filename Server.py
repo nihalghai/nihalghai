@@ -36,7 +36,7 @@ async def create_item(item: Item):
     
         import pandas as pd
         from sklearn.linear_model import LinearRegression
-        df = pd.read_csv(r"C:\Users\nihal\OneDrive\Desktop\Nihal_Study\data\house_price_regression_dataset.csv")
+        df = pd.read_csv(r"house_price_regression_dataset.csv")
         print (df)
 
         x = df[["Square_Footage","Num_Bedrooms","Num_Bathrooms","Year_Built","Lot_Size","Garage_Size","Neighborhood_Quality"]]
